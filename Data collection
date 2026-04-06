@@ -1,3 +1,17 @@
+# STEP 1: Data Collection
+
+# Read the wine dataset from the UCI repository
+wine <- read.csv(url("https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"), header = FALSE)
+
+# View the structure of the dataset
+str(wine)
+
+# Check dimensions (rows and columns)
+dim(wine)
+
+# Look at the first few rows
+head(wine)
+
 # STEP 2: Data Exploration and Preparation
 
 # Assign column names based on dataset description
