@@ -2,12 +2,16 @@
 
 # Read the wine dataset from the UCI repository
 wine <- read.csv(url("https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"), header = FALSE)
+
+# view first few rows
 head(wine)
+
+#view data set size
 dim(wine)
 
 #column name 
-colnames(wine) <- c("Class","Alcohol","Malic_Acid","Ash","Alcalinity_Ash", "Magnesium","Total_Phenols","Flavanoids","Nonflavanoid_Phenols",
-                    "Proanthocyanins","Color_Intensity","Hue", "OD280_OD315","Proline")
+colnames(wine) <- c("Class","Alcohol","Malicacid","Ash","Alcalinity_of_Ash", "Magnesium","Total_Phenols","Flavanoids","Nonflavanoid_Phenols",
+                    "Proanthocyanins","Color_Intensity","Hue", "OD280_OD315_of_diluted_wines","Proline")
 
 # structure
 str(wine)
